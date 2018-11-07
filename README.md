@@ -1,16 +1,9 @@
-# single-line-text-field
+# ![SingleLineTextField](https://user-images.githubusercontent.com/44801418/48109583-9c3e0d80-e27a-11e8-947b-0a44998bc403.png) SingleLineTextField
 
-[![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
 
-Describe single-line-text-field here.
-
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
+Used for entering a single line of text.
 
 [npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
+[npm]: https://www.npmjs.org/@cmds/single-line-text-field
 
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo

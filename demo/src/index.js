@@ -49,7 +49,16 @@ class Demo extends Component {
     render() {
         return <div>
             <h1>SingleLineTextField Demo</h1>
-            <h2>Default</h2>
+            <p>Used for entering a single line of text.</p>
+            <h2>Context based</h2>
+            <p>The behaviour of the component changes based on the context in which it is rendered.</p>
+            <h3>
+                RecordDetail context
+            </h3>
+            <p>Used for displaying the checkbox in a record detail.</p>
+            <h4>
+                Editor role
+            </h4>
             <Viewport>
                 <div
                     className={css`
@@ -57,12 +66,14 @@ class Demo extends Component {
                     `}
                 >
                     <SingleLineTextField
+                        contextId={'recordDetail'}
+                        roleId={'editor'}
                         value={'A delightful sentence.'}
                         onChange={log('onChange')}
                     />
                 </div>
             </Viewport>
-            <h2>Empty</h2>
+            <h4>Read only role</h4>
             <Viewport>
                 <div
                     className={css`
@@ -70,7 +81,9 @@ class Demo extends Component {
                     `}
                 >
                     <SingleLineTextField
-                        value={null}
+                        contextId={'recordDetail'}
+                        roleId={'readOnly'}
+                        value={'A delightful sentence.'}
                         onChange={log('onChange')}
                     />
                 </div>

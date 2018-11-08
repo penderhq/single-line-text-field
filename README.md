@@ -4,6 +4,6 @@
 
 Used for entering a single line of text.
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
+[npm-badge]: https://img.shields.io/npm/v/@cmds/single-line-text-field.svg
 [npm]: https://www.npmjs.org/@cmds/single-line-text-field
 

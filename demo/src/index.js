@@ -88,6 +88,24 @@ class Demo extends Component {
                     />
                 </div>
             </Viewport>
+            <h3>RecordGalleryCard context</h3>
+            <h4>Read only role</h4>
+            <Viewport>
+                <div
+                    className={css`
+                        width: 220px;
+                        height: 22px;
+                        background-color: #fff;
+                    `}
+                >
+                    <SingleLineTextField
+                        contextId={'recordGalleryCard'}
+                        roleId={'readOnly'}
+                        value={'A delightful sentence.'}
+                        onChange={log('onChange')}
+                    />
+                </div>
+            </Viewport>
         </div>
     }
 }

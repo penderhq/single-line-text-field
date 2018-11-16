@@ -66,9 +66,10 @@ class Demo extends Component {
                     `}
                 >
                     <SingleLineTextField
+                        id={'fld1'}
                         contextId={'recordDetail'}
                         roleId={'editor'}
-                        value={'A delightful sentence.'}
+                        text={'A delightful sentence.'}
                         onChange={log('onChange')}
                     />
                 </div>
@@ -81,9 +82,10 @@ class Demo extends Component {
                     `}
                 >
                     <SingleLineTextField
+                        id={'fld1'}
                         contextId={'recordDetail'}
                         roleId={'readOnly'}
-                        value={'A delightful sentence.'}
+                        text={'A delightful sentence.'}
                         onChange={log('onChange')}
                     />
                 </div>
@@ -99,9 +101,10 @@ class Demo extends Component {
                     `}
                 >
                     <SingleLineTextField
+                        id={'fld1'}
                         contextId={'recordGalleryCard'}
                         roleId={'readOnly'}
-                        value={'A delightful sentence.'}
+                        text={'A delightful sentence.'}
                         onChange={log('onChange')}
                     />
                 </div>

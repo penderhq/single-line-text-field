@@ -1,12 +1,50 @@
 import React from 'react'
+import {css} from 'emotion'
 
 export default class SingleLineTextField extends React.Component {
 
     render() {
 
         return (
-            <div>
-                {this.props.text}
+            <div
+                className={css`
+                    font-size: 13px;
+                    padding: 0;
+                    margin: 0;
+                    color: #111111;
+                    cursor: default;
+                    outline: none;
+                    display: flex;
+                    vertical-align: middle;
+                    height: auto;
+                    position: relative;
+                    white-space: normal;
+                    line-height: 12px;
+                    box-shadow: none;
+                    overflow: visible;
+                    box-sizing: border-box;
+                    background-color: transparent;
+                `}
+            >
+                <div
+                    className={css`
+                        display: flex;
+                        flex: 1 1 auto;
+                        min-width: 0;
+                        min-height: 0;
+                        line-height: 1.5;
+                    `}
+                >
+                    <div
+                        className={css`
+                            cursor: pointer;
+                            white-space: pre-wrap;
+                            word-wrap: break-word;
+                        `}
+                    >
+                        {this.props.text}
+                    </div>
+                </div>
             </div>
         )
     }

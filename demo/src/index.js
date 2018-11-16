@@ -75,10 +75,12 @@ class Demo extends Component {
                 </div>
             </Viewport>
             <h4>Read only role</h4>
+            <h5>Normal sentence</h5>
             <Viewport>
                 <div
                     className={css`
-                        width: 600px;
+                        width: 450px;
+                        background-color: #fff;
                     `}
                 >
                     <SingleLineTextField
@@ -86,7 +88,22 @@ class Demo extends Component {
                         contextId={'recordDetail'}
                         roleId={'readOnly'}
                         text={'A delightful sentence.'}
-                        onChange={log('onChange')}
+                    />
+                </div>
+            </Viewport>
+            <h5>Very long sentence</h5>
+            <Viewport>
+                <div
+                    className={css`
+                        width: 450px;
+                        background-color: #fff;
+                    `}
+                >
+                    <SingleLineTextField
+                        id={'fld1'}
+                        contextId={'recordDetail'}
+                        roleId={'readOnly'}
+                        text={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}
                     />
                 </div>
             </Viewport>

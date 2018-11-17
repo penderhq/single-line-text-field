@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {css} from 'emotion'
 import RecordDetailEditor from './contexts/recordDetail/editor'
 import RecordDetailReadOnly from './contexts/recordDetail/readOnly'
 import RecordGalleryCard from './contexts/recordGalleryCard'
+import RecordListItem from './contexts/recordListItem'
 
 export default class SingleLineTextField extends React.Component {
 
@@ -36,9 +36,17 @@ export default class SingleLineTextField extends React.Component {
             )
         }
 
-        if (contextId === 'recordGalleryCard') {
+        if (contextId === 'recordGalleryCard' && roleId === 'readOnly') {
             return (
                 <RecordGalleryCard
+                    {...this.props}
+                />
+            )
+        }
+
+        if (contextId === 'recordListItem' && roleId === 'readOnly') {
+            return (
+                <RecordListItem
                     {...this.props}
                 />
             )

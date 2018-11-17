@@ -122,7 +122,24 @@ class Demo extends Component {
                         contextId={'recordGalleryCard'}
                         roleId={'readOnly'}
                         text={'A delightful sentence.'}
-                        onChange={log('onChange')}
+                    />
+                </div>
+            </Viewport>
+            <h3>RecordListItem context</h3>
+            <h4>Read only role</h4>
+            <Viewport>
+                <div
+                    className={css`
+                        width: 220px;
+                        height: 24px;
+                        background-color: #fff;
+                    `}
+                >
+                    <SingleLineTextField
+                        id={'fld1'}
+                        contextId={'recordListItem'}
+                        roleId={'readOnly'}
+                        text={'A delightful sentence.'}
                     />
                 </div>
             </Viewport>

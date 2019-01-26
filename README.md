@@ -1,5 +1,7 @@
 # ![SingleLineTextField](https://user-images.githubusercontent.com/44801418/48109583-9c3e0d80-e27a-11e8-947b-0a44998bc403.png) SingleLineTextField
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/entercosmos/single-line-text-field.svg)](https://greenkeeper.io/)
+
 [![npm package][npm-badge]][npm]
 
 Used for entering a single line of text.

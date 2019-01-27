@@ -33,15 +33,12 @@ class Demo extends Component {
         return <div>
             <h1>SingleLineTextField Demo</h1>
             <p>Used for entering a single line of text.</p>
-            <h2>Context based</h2>
-            <p>The behaviour of the component changes based on the context in which it is rendered.</p>
-            <h3>
-                RecordDetail context
-            </h3>
-            <p>Used for displaying the checkbox in a record detail.</p>
-            <h4>
-                Editor role
-            </h4>
+            <h2>
+                State
+            </h2>
+            <pre>
+                {JSON.stringify(this.state, null, 2)}
+            </pre>
             <Context contextId={'recordDetail'} roleId={'editor'}/>
             <div
                 className={css`

@@ -1,4 +1,5 @@
 import React from 'react'
+import TextInput from '@cmds/text-input'
 import {css} from 'emotion'
 
 export default class SingleLineTextField extends React.Component {
@@ -6,11 +7,7 @@ export default class SingleLineTextField extends React.Component {
     render() {
 
         return (
-            <input
-                data-context-id={this.props.contextId}
-                data-role-id={this.props.roleId}
-                id={this.props.id}
-                type="text"
+            <TextInput
                 className={css`
                     -webkit-appearance: none;
                     background-color: rgba(0, 0, 0, 0.05);
@@ -24,17 +21,17 @@ export default class SingleLineTextField extends React.Component {
                         border-color: rgba(0, 0, 0, 0.25);
                     }
                 `}
-                value={this.props.text || ''}
+                value={this.props.text}
                 onChange={this.handleChange}
             />
         )
     }
 
-    handleChange = e => {
+    handleChange = ({value}) => {
 
         this.props.onChange({
             id: this.props.id,
-            text: e.target.value
+            text: value
         })
     }
 }

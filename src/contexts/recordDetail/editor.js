@@ -12,18 +12,16 @@ export default class SingleLineTextField extends React.Component {
                 id={this.props.id}
                 type="text"
                 className={css`
-                    padding: 16px 20px;
-                    width: 100%;
-                    background: #fafafa;
-                    border: 1px solid #ced4da;
-                    box-shadow: none;
-                    border-radius: 4px;
-                    font-size: 16px;
                     -webkit-appearance: none;
+                    background-color: rgba(0, 0, 0, 0.05);
+                    border: 2px solid transparent;
+                    border-radius: 3px;
+                    padding: 6px;
+                    width: 100%;
+                    max-width: 220px;
                     &:focus {
-                        background-color: #fff;
-                        border-color: #000;
-                        outline: 0;
+                        outline: none;
+                        border-color: rgba(0, 0, 0, 0.25);
                     }
                 `}
                 value={this.props.text || ''}
@@ -33,7 +31,7 @@ export default class SingleLineTextField extends React.Component {
     }
 
     handleChange = e => {
-        
+
         this.props.onChange({
             id: this.props.id,
             text: e.target.value

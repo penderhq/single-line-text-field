@@ -9,16 +9,22 @@ export default class SingleLineTextField extends React.Component {
         return (
             <TextInput
                 className={css`
-                    -webkit-appearance: none;
-                    background-color: rgba(0, 0, 0, 0.05);
-                    border: 2px solid transparent;
+                    background-color: #fff;
+                    border: 1px solid #d9d9d9;
                     border-radius: 3px;
-                    padding: 6px;
+                    color: #191919;
+                    display: block;
+                    font-size: 16px;
+                    height: 38px;
+                    line-height: 1.42857;
+                    padding: 5px 15px;
+                    transition: border-color .15s ease-in-out;
                     width: 100%;
-                    max-width: 220px;
                     &:focus {
-                        outline: none;
-                        border-color: rgba(0, 0, 0, 0.25);
+                        -webkit-transition-duration: 0s;
+                        border-color: #07f;
+                        outline: 0;
+                        transition-duration: 0s;
                     }
                 `}
                 value={this.props.text}

@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {render} from 'react-dom'
+import {Canvas, Box, Heading, Paragraph} from '@cmds/demo-utils'
 import {css, injectGlobal} from 'emotion'
 import SingleLineTextField from '../../src'
 
@@ -9,6 +10,7 @@ injectGlobal`
     }
     body {
         font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+        margin: 0;
     }
 `
 
@@ -30,21 +32,14 @@ class Demo extends Component {
     }
 
     render() {
-        return <div>
-            <h1>SingleLineTextField Demo</h1>
-            <p>Used for entering a single line of text.</p>
-            <h2>
-                State
-            </h2>
-            <pre>
-                {JSON.stringify(this.state, null, 2)}
-            </pre>
-            <Context contextId={'recordDetail'} roleId={'editor'}/>
-            <div
-                className={css`
-                        width: 600px;
-                    `}
-            >
+        return <Canvas>
+            <Heading>
+                Record Detail Context
+            </Heading>
+            <Paragraph>
+                With editor role
+            </Paragraph>
+            <Box>
                 <SingleLineTextField
                     id={'fld1'}
                     contextId={'recordDetail'}
@@ -52,64 +47,56 @@ class Demo extends Component {
                     text={this.state.text}
                     onChange={({text}) => this.setState({text})}
                 />
-            </div>
-            <h2>Normal sentence</h2>
-            <Context contextId={'recordDetail'} roleId={'readOnly'}/>
-            <div
-                className={css`
-                        width: 450px;
-                    `}
-            >
+            </Box>
+            <Paragraph>
+                State
+            </Paragraph>
+            <Box>
+                <pre>
+                    {JSON.stringify(this.state, null, 2)}
+                </pre>
+            </Box>
+            <Paragraph>Normal sentence and read only role</Paragraph>
+            <Box>
                 <SingleLineTextField
                     id={'fld1'}
                     contextId={'recordDetail'}
                     roleId={'readOnly'}
                     text={this.state.text}
                 />
-            </div>
-            <h2>Very long sentence</h2>
-            <Context contextId={'recordDetail'} roleId={'readOnly'}/>
-            <div
-                className={css`
-                        width: 450px;
-                    `}
-            >
+            </Box>
+            <Paragraph>Very long sentence and read only role</Paragraph>
+            <Box>
                 <SingleLineTextField
                     id={'fld1'}
                     contextId={'recordDetail'}
                     roleId={'readOnly'}
                     text={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}
                 />
-            </div>
-            <Context contextId={'recordGalleryCard'} roleId={'readOnly'}/>
-            <div
-                className={css`
-                        width: 220px;
-                        height: 22px;
-                    `}
-            >
+            </Box>
+            <Heading>
+                Record Gallery Card Context
+            </Heading>
+            <Box>
                 <SingleLineTextField
                     id={'fld1'}
                     contextId={'recordGalleryCard'}
                     roleId={'readOnly'}
                     text={this.state.text}
                 />
-            </div>
-            <Context contextId={'recordListItem'} roleId={'readOnly'}/>
-            <div
-                className={css`
-                        width: 220px;
-                        height: 24px;
-                    `}
-            >
+            </Box>
+            <Heading>
+                Record List Item Context
+            </Heading>
+            <Box>
                 <SingleLineTextField
                     id={'fld1'}
                     contextId={'recordListItem'}
                     roleId={'readOnly'}
                     text={this.state.text}
                 />
-            </div>
-        </div>
+            </Box>
+        </Canvas>
     }
 }
 

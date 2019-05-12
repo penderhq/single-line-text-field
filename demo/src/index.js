@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {render} from 'react-dom'
-import {Canvas, Box, Heading, Paragraph} from '@cmds/demo-utils'
+import {Canvas, Box, Heading, Paragraph} from '@pndr/demo-utils'
 import {css, injectGlobal} from 'emotion'
 import SingleLineTextField from '../../src'
 
@@ -74,9 +74,34 @@ class Demo extends Component {
                     text={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}
                 />
             </Box>
+            <Paragraph>
+                Empty with editor role
+            </Paragraph>
+            <Box>
+                <SingleLineTextField
+                    id={'fld1'}
+                    contextId={'recordDetail'}
+                    roleId={'editor'}
+                    text={null}
+                />
+            </Box>
+            <Paragraph>
+                Empty with read only role
+            </Paragraph>
+            <Box>
+                <SingleLineTextField
+                    id={'fld1'}
+                    contextId={'recordDetail'}
+                    roleId={'readOnly'}
+                    text={null}
+                />
+            </Box>
             <Heading>
                 Record Gallery Card Context
             </Heading>
+            <Paragraph>
+                With read only role
+            </Paragraph>
             <Box>
                 <SingleLineTextField
                     id={'fld1'}
@@ -85,15 +110,40 @@ class Demo extends Component {
                     text={this.state.text}
                 />
             </Box>
+            <Paragraph>
+                Empty with read only role
+            </Paragraph>
+            <Box>
+                <SingleLineTextField
+                    id={'fld1'}
+                    contextId={'recordGalleryCard'}
+                    roleId={'readOnly'}
+                    text={null}
+                />
+            </Box>
             <Heading>
                 Record List Item Context
             </Heading>
+            <Paragraph>
+                With read only role
+            </Paragraph>
             <Box>
                 <SingleLineTextField
                     id={'fld1'}
                     contextId={'recordListItem'}
                     roleId={'readOnly'}
                     text={this.state.text}
+                />
+            </Box>
+            <Paragraph>
+                Empty with read only role
+            </Paragraph>
+            <Box>
+                <SingleLineTextField
+                    id={'fld1'}
+                    contextId={'recordListItem'}
+                    roleId={'readOnly'}
+                    text={null}
                 />
             </Box>
         </Canvas>

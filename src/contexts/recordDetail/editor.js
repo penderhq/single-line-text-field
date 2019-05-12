@@ -1,5 +1,5 @@
 import React from 'react'
-import TextInput from '@cmds/text-input'
+import TextInput from '@pndr/text-input'
 import {css} from 'emotion'
 
 export default class SingleLineTextField extends React.Component {

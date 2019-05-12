@@ -1,9 +1,14 @@
 import React from 'react'
 import {css} from 'emotion'
+import defaultEmptyRenderer from '../../defaultEmptyRenderer';
 
 export default class SingleLineTextField extends React.Component {
 
     render() {
+
+        if (!this.props.text) {
+            return defaultEmptyRenderer()
+        }
 
         return (
             <div
@@ -16,8 +21,6 @@ export default class SingleLineTextField extends React.Component {
                     display: inline-flex;
                     overflow: hidden;
                     align-items: center;
-                    line-height: 1.5;
-                    font-size: 13px;
                 `}
             >
                 <div

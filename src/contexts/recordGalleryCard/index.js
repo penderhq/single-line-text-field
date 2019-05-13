@@ -22,6 +22,7 @@ export default class SingleLineTextField extends React.Component {
                         outline: none;
                         display: flex;
                         flex-wrap: wrap;
+                        width: 100%;
                     `}
             >
                 <div

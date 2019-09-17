@@ -1,6 +1,6 @@
 {
   "name": "@pndr/single-line-text-field",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "description": "Used for entering a single line of text.",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -21,13 +21,13 @@
     "test:watch": "nwb test-react --server"
   },
   "dependencies": {
-    "@pndr/text-input": "^0.2.0",
     "emotion": "^9.2.12"
   },
   "peerDependencies": {
     "react": "16.x"
   },
   "devDependencies": {
+    "@pndr/text-input": "^0.5.0",
     "@pndr/demo-utils": "^0.3.0",
     "nwb": "0.23.x",
     "react": "^16.6.1",

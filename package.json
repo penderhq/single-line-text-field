@@ -1,6 +1,6 @@
 {
   "name": "@pndr/single-line-text-field",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "description": "Used for entering a single line of text.",
   "main": "lib/index.js",
   "module": "es/index.js",

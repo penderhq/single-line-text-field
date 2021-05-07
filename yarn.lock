@@ -145,10 +145,10 @@
   dependencies:
     emotion "^10.0.9"
 
-"@pndr/text-input@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@pndr/text-input/-/text-input-0.2.0.tgz#8638d55c7c4509f5a2bedc7727d5727de36248f1"
-  integrity sha512-tm/BcgvAlBQnbR82QE9B/nTS7w7ACHrlHTreFvFimY8sM+aQhZY0YJENz2Qp6hoHFHFsYhkvfQmVXZuXQ9pi5g==
+"@pndr/text-input@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@pndr/text-input/-/text-input-0.5.0.tgz#a5dc9103d4c57dbedc0ce85817d1b9b08a10ee47"
+  integrity sha512-v6L+5+WpWu6L51fIwvQ6Vop9/k77Mb9krrBKXRlZWxuxapYRSiCighPvV0EKNnfva4+KFpAwnf4itVg8msf9Vg==
 
 "@types/node@^8.0.7":
   version "8.10.48"
@@ -5182,9 +5182,9 @@ lodash.camelcase@^4.3.0:
   integrity sha1-soqmKIorn8ZRA1x3EfZathkDMaY=
 
 lodash@^4.0.0, lodash@^4.0.1, lodash@^4.15.0, lodash@^4.17.0, lodash@^4.17.11, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0, lodash@^4.5.0, lodash@^4.6.1:
-  version "4.17.11"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
-  integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 log-symbols@^2.1.0, log-symbols@^2.2.0:
   version "2.2.0"

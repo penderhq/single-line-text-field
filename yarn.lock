@@ -145,10 +145,10 @@
   dependencies:
     emotion "^10.0.9"
 
-"@pndr/text-input@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@pndr/text-input/-/text-input-0.2.0.tgz#8638d55c7c4509f5a2bedc7727d5727de36248f1"
-  integrity sha512-tm/BcgvAlBQnbR82QE9B/nTS7w7ACHrlHTreFvFimY8sM+aQhZY0YJENz2Qp6hoHFHFsYhkvfQmVXZuXQ9pi5g==
+"@pndr/text-input@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@pndr/text-input/-/text-input-0.5.0.tgz#a5dc9103d4c57dbedc0ce85817d1b9b08a10ee47"
+  integrity sha512-v6L+5+WpWu6L51fIwvQ6Vop9/k77Mb9krrBKXRlZWxuxapYRSiCighPvV0EKNnfva4+KFpAwnf4itVg8msf9Vg==
 
 "@types/node@^8.0.7":
   version "8.10.48"
@@ -6391,9 +6391,9 @@ path-key@^2.0.0, path-key@^2.0.1:
   integrity sha1-QRyttXTFoUDTpLGRDUDYDMn0C0A=
 
 path-parse@^1.0.5, path-parse@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
-  integrity sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
+  integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
 path-proxy@~1.0.0:
   version "1.0.0"

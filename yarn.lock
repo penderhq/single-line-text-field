@@ -145,10 +145,10 @@
   dependencies:
     emotion "^10.0.9"
 
-"@pndr/text-input@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@pndr/text-input/-/text-input-0.2.0.tgz#8638d55c7c4509f5a2bedc7727d5727de36248f1"
-  integrity sha512-tm/BcgvAlBQnbR82QE9B/nTS7w7ACHrlHTreFvFimY8sM+aQhZY0YJENz2Qp6hoHFHFsYhkvfQmVXZuXQ9pi5g==
+"@pndr/text-input@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@pndr/text-input/-/text-input-0.5.0.tgz#a5dc9103d4c57dbedc0ce85817d1b9b08a10ee47"
+  integrity sha512-v6L+5+WpWu6L51fIwvQ6Vop9/k77Mb9krrBKXRlZWxuxapYRSiCighPvV0EKNnfva4+KFpAwnf4itVg8msf9Vg==
 
 "@types/node@^8.0.7":
   version "8.10.48"
@@ -6760,9 +6760,9 @@ qs@6.7.0:
   integrity sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
 
 qs@~6.2.0:
-  version "6.2.3"
-  resolved "https://registry.yarnpkg.com/qs/-/qs-6.2.3.tgz#1cfcb25c10a9b2b483053ff39f5dfc9233908cfe"
-  integrity sha1-HPyyXBCpsrSDBT/zn138kjOQjP4=
+  version "6.2.4"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.2.4.tgz#d90821bb8537cecc140e6c34f54ec76e54b39b22"
+  integrity sha512-E57gmgKXqDda+qWTkUJgIwgJICK7zgMfqZZopTRKZ6mY9gzLlmJN9EpXNnDrTxXFlOM/a+I28kJkF/60rqgnYw==
 
 querystring-es3@^0.2.0:
   version "0.2.1"
